@@ -1,7 +1,7 @@
 const redux = require('redux');
 const createStore = redux.createStore;
 const BUY_Cake = 'BUY_CAKE';
-const BUY_IceCream = "BUY_ICECREAM"
+const BUY_IceCream = "BUY_ICECREAM";
 //action
 function buyCake() {
   return {
@@ -32,9 +32,9 @@ const reducers = (state = initialState, action) => {
       ...state,
       numOfCake: state.numOfCake - 1
     }
-    case BUY_ICECREAM: return {
+    case BUY_IceCream: return {
       ...state,
-      numOfCake: state.numOfIceCream - 1
+      numOfIceCream: state.numOfIceCream - 1
     }
 
     default: return state
