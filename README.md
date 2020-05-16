@@ -1,1 +1,3 @@
 # redux
+
+Using vanilla js
